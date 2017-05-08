@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			*{padding:0;margin:0}
+			.wrap{background: #000;}
+			.nav_list{width:1027px;height:136px;margin:100px auto;}
+		    li{list-style: none;cursor:pointer}
+		    a {display: block;}
+		    .nav_list ul li{display: inline-block;width:205px;height:136px;margin-left:-40px;z-index: 2;position: relative;}
+		    .nav_list ul li:first-child{background:url(img/rocket-large.png) no-repeat left center ;background-size: cover;background-position: 50%;}
+		    .nav_list ul li:first-child:before{content:"";background:url(img/menu-bg.png) no-repeat;position: absolute;left:0;top:0;width:20px;height:136px;}
+		    .nav_list ul li:nth-child(2){background:url(img/wine-large.png) no-repeat left center ;background-size: cover;background-position: 50%;}
+		    .nav_list ul li:nth-child(3){background:url(img/burger-large.png)no-repeat left center ;background-size: cover;background-position: 50%;}
+		    .nav_list ul li:nth-child(4){background:url(img/comment-large.png) no-repeat left center ;background-size: cover;background-position: 50%;}
+		    .nav_list ul li:nth-child(5){background:url(img/sport-large.png) no-repeat left center ;background-size: cover;background-position: 50%;}
+		    .nav_list ul li:nth-child(6){background:url(img/earth-large.png) no-repeat left center ;background-size: cover;background-position: 50%;}
+		    .current{position: relative;width:96px;height:172px;position: relative;left:15px;top:-158px;transition: all 1.5s;}
+		    .selected{width:96px;height:172px;background:#c39449;z-index: 1;}
+		    .top-arrow{border:10px solid transparent;border-top-color:#c39449;position: absolute;top:18px;left:35px;z-index: 3;}
+		    .bottom-arrow{border:10px solid transparent;border-bottom-color:#c39449;position: absolute;top:134px;left:35px;z-index: 3;}
+		    .nav_list ul li:nth-child(2):hover~ .current{left:18%;}
+		    .nav_list ul li:nth-child(3):hover~ .current{left:34.5%;}
+		    .nav_list ul li:nth-child(4):hover~ .current{left:51%}
+		    .nav_list ul li:nth-child(5):hover~ .current{left:68%}
+		    .nav_list ul li:nth-child(6):hover~ .current{left:84%}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="nav_list"> 
+				<ul>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<div class="current">	
+				<div class="selected"></div>
+				<div class="top-arrow"></div>
+				<div class="bottom-arrow"></div>
+			</div>
+				</ul>
+				
+			</div>
+			
+		</div>
+	</body>
+</html>
